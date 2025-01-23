@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rutina de Ejercicios</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #6200ea;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #eee;
+            padding: 0.5rem;
+        }
+        nav button {
+            background-color: #6200ea;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            margin: 0 0.5rem;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        nav button:hover {
+            background-color: #3700b3;
+        }
+        section {
+            padding: 1rem;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Rutina de Ejercicios</h1>
+    </header>
+    <nav>
+        <button onclick="showDay(1)">Día 1</button>
+        <button onclick="showDay(2)">Día 2</button>
+        <button onclick="showDay(3)">Día 3</button>
+        <button onclick="showDay(4)">Día 4</button>
+        <button onclick="showDay(5)">Día 5</button>
+    </nav>
+    <section id="content">
+        <div id="day1" class="hidden">
+            <h2>Día 1: Full Body (Fuerza + Cardio)</h2>
+            <p><strong>Calentamiento:</strong> Saltos de tijera y movilidad dinámica (10 min).</p>
+            <p><strong>Circuito:</strong></p>
+            <ul>
+                <li>Sentadilla con barra - 12 repeticiones</li>
+                <li>Press de banca con mancuernas - 12 repeticiones</li>
+                <li>Remo con mancuerna - 10 repeticiones por lado</li>
+                <li>Plancha dinámica - 30 segundos</li>
+            </ul>
+            <p><strong>Estiramientos:</strong> Isquiotibiales, cuádriceps, y pecho (20-30 segundos cada uno).</p>
+            <ul>
+                <li>Estiramiento de isquiotibiales:Siéntate con las piernas extendidas, 
+                    inclina el torso hacia adelante y toca los pies. Mantén por 20-30 segundos.</li>
+                <li>Estiramiento de pecho: 
+                    Coloca los brazos en un marco de puerta y empuja suavemente el torso hacia adelante para abrir el pecho. Mantén 20-30 segundos.
+                </li>
+                <li>Estiramiento de espalda:
+                    Siéntate sobre los talones y lleva los brazos hacia adelante (postura del niño). Mantén 30 segundos.
+                </li>
+                            </ul>
+        </div>
+        <div id="day2" class="hidden">
+            <h2>Día 2: Tren Superior + Core</h2>
+            <p><strong>Calentamiento:</strong> Movilidad de hombros y saltos suaves (5 min).</p>
+            <p><strong>Fuerza:</strong></p>
+            <ul>
+                <li>Press militar con barra - 10 repeticiones</li>
+                <img src="img/pres miliar con barra.jpg" alt="Press militar con barra" width="300">
+                <li>Remo inclinado con barra - 12 repeticiones</li>
+                <img src="img/remo inclinado con barra.gif" alt="Press militar con barra" width="300">
+                <li>Press de Pecho con Mancuernas:Realiza de 10 a 12 repeticiones.</li>
+                <img src="img/press-con-mancuernas.jpeg" alt="Press militar con barra" width="500">
+                <li>Plancha con toque de hombro - 30 segundos</li>
+                <img src="img/planca con toque de hombro.jpg" alt="Press militar con barra" width="300">
+            </ul>
+            <p><strong>Estiramientos:</strong> Hombros, tríceps y espalda alta (20-30 segundos cada uno).</p>
+
+            <ul>
+                <li>Estiramiento de hombros:
+                    Cruza un brazo frente al cuerpo y sujeta con la otra mano. Mantén 20-30 segundos por brazo.    
+                </li>
+                <li>Estiramiento de tríceps:
+                    Lleva un brazo detrás de la cabeza y empuja el codo hacia abajo con la mano contraria. Mantén 20-30 segundos.
+                </li>
+                <li>Estiramiento de espalda alta:
+                    Coloca las manos juntas frente al pecho y empuja los omóplatos hacia afuera. Mantén 20-30 segundos.
+                </li>
+                <li>Estiramiento de oblicuos:
+                    De pie, inclina el torso hacia un lado con el brazo extendido por encima de la cabeza. Mantén 20-30 segundos por lado.
+                </li>
+                            </ul>
+        </div>
+        <!-- Agrega contenido para el Día 3, Día 4 y Día 5 de manera similar -->
+        <div id="day3" class="hidden">
+            <h2>Día 3: Descanso Activo</h2>
+            <p>Caminar a ritmo moderado (30-40 min) o realizar yoga.</p>
+            <p><strong>Estiramientos:</strong> Cadera, isquiotibiales, y postura del niño (20-30 segundos cada uno).</p>
+        </div>
+        <div id="day4" class="hidden">
+            <h2>Día 4: Tren Inferior (Glúteos + Piernas)</h2>
+            <p><strong>Calentamiento:</strong> Trote ligero o bicicleta (5 min).</p>
+            <p><strong>Fuerza:</strong></p>
+            <ul>
+                <li>Sentadilla frontal con barra - 10 repeticiones</li>
+                <li>Peso muerto rumano - 12 repeticiones</li>
+                <li>Zancadas con mancuernas - 12 por pierna</li>
+                <li>Elevación de talones con peso - 15 repeticiones</li>
+            </ul>
+            <p><strong>Estiramientos:</strong> Cuádriceps, glúteos y aductores (20-30 segundos cada uno).</p>
+        </div>
+        <div id="day5" class="hidden">
+            <h2>Día 5: Cardio + Full Body Metabólico</h2>
+            <p><strong>Cardio:</strong> 20 min continuo (cinta, bicicleta o remo).</p>
+            <p><strong>Circuito Metabólico:</strong></p>
+            <ul>
+                <li>Thrusters con mancuernas - 12 repeticiones</li>
+                <li>Kettlebell swings - 15 repeticiones</li>
+                <li>Flexiones o press con barra - 12 repeticiones</li>
+                <li>Mountain climbers - 20 por pierna</li>
+            </ul>
+            <p><strong>Estiramientos:</strong> Pecho, gemelos y espalda baja (20-30 segundos cada uno).</p>
+        </div>
+    </section>
+
+    <script>
+        function showDay(day) {
+            const days = document.querySelectorAll('section > div');
+            days.forEach(dayDiv => dayDiv.classList.add('hidden'));
+            document.getElementById(`day${day}`).classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
